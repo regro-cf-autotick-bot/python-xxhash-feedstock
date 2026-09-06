@@ -1,4 +1,4 @@
-{% set version = "3.7.0" %}
+{% set version = "4.0.1" %}
 {% set pip_name = "xxhash" %}
 {% set name = "python-xxhash" %}
 
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  sha256: 6cc4eefbb542a5d6ffd6d70ea9c502957c925e800f998c5630ecc809d6702bae
+  sha256: d55bf4ef10eb09b8b6866790e083d26d087d84caa3cc0946ba87c3ca7ecaf7b7
   url: https://files.pythonhosted.org/packages/source/{{ pip_name[0] }}/{{ pip_name }}/{{ pip_name }}-{{ version }}.tar.gz
 
 build:
-  number: 1
+  number: 0
   script:
     - export XXHASH_LINK_SO=1  # [unix]
     - SET XXHASH_LINK_SO=1  # [win]
